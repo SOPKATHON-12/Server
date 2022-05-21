@@ -7,6 +7,9 @@ const message = {
   INTERNAL_SERVER_ERROR: '서버 내부 오류',
   NULL_VALUE_TOKEN: '토큰이 존재하지 않습니다.',
   INVALID_TOKEN: '토큰이 만료되었습니다.',
+
+  // Game
+  CREATE_GAME_SUCCESS: '게임 기록 생성 성공',
 };
 
 export default message;

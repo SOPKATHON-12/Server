@@ -21,7 +21,7 @@ const GameSchema = new mongoose.Schema(
       required: true,
     },
     comment: {
-      type: Number,
+      type: String,
     },
   },
   {
