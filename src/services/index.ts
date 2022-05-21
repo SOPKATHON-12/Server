@@ -1,5 +1,6 @@
 import GameService from './game/GameService';
+import MyRecordService from './myRecord/MyRecordService';
+import RankingService from './ranking/RankingService';
 import UserService from './user/UserService';
-import MyRecordService from './MyRecordService';
 
-export { UserService, GameService, MyRecordService };
+export { UserService, GameService, MyRecordService, RankingService };

@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import message from '../modules/responseMessage';
 import statusCode from '../modules/statusCode';
 import util from '../modules/util';
-import MyRecordService from '../services/MyRecordService';
+import { MyRecordService } from '../services';
 
 const getMonthDatas = async (req: Request, res: Response): Promise<void | Response> => {
   const { month } = req.query;
