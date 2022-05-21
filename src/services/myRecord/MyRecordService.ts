@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
-import { MyRecordDayResponseDto, Record } from '../interfaces/myRecord/MyRecordDayResponseDto';
-import { Day, MyRecordMonthResponseDto } from '../interfaces/myRecord/MyRecordMonthResponseDto';
-import Game from '../models/Game';
+import { MyRecordDayResponseDto, Record } from '../../interfaces/myRecord/MyRecordDayResponseDto';
+import { Day, MyRecordMonthResponseDto } from '../../interfaces/myRecord/MyRecordMonthResponseDto';
+import Game from '../../models/Game';
 
 const userId = '6289291fab470b5634c74045';
 

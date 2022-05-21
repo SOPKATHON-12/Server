@@ -1,8 +1,8 @@
-import express, { Request, Response } from 'express';
+import { Request, Response } from 'express';
 import message from '../modules/responseMessage';
 import statusCode from '../modules/statusCode';
 import util from '../modules/util';
-import RankingService from '../services/ranking/RankingService';
+import { RankingService } from '../services';
 
 const getRanking = async (req: Request, res: Response) => {
   const type = req.query.type as string;
