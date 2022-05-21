@@ -10,6 +10,10 @@ const message = {
 
   // Game
   CREATE_GAME_SUCCESS: '게임 기록 생성 성공',
+  
+  // Ranking
+  READ_RANKING_SUCCESS: '랭킹 조회 성공',
+
 
   // myrecord
   READ_MYRECORD_MONTH_SUCCESS: '월별 데이터 조회 성공',
