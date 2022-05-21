@@ -7,6 +7,10 @@ const message = {
   INTERNAL_SERVER_ERROR: '서버 내부 오류',
   NULL_VALUE_TOKEN: '토큰이 존재하지 않습니다.',
   INVALID_TOKEN: '토큰이 만료되었습니다.',
+
+  // myrecord
+  READ_MYRECORD_MONTH_SUCCESS: '월별 데이터 조회 성공',
+  READ_MYRECORDM_DAY_SUCCESS: '일별 데이터 조회 성공',
 };
 
 export default message;

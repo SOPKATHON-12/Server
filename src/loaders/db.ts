@@ -8,7 +8,7 @@ const connectDB = async () => {
     await mongoose.connect(config.mongoURI);
 
     mongoose.set('autoCreate', true);
-    
+
     console.log('Mongoose Connected ...');
 
     Game.createCollection().then(function (collection) {
@@ -18,7 +18,6 @@ const connectDB = async () => {
     User.createCollection().then(function (collection) {
       console.log('User Collection is created!');
     });
-    
   } catch (err: any) {
     console.error(err.message);
     process.exit(1);
