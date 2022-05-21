@@ -9,9 +9,18 @@ const UserSchema = new mongoose.Schema(
     },
     games: [mongoose.Types.ObjectId],
     maxRecord: {
-      emoji: { type: Number },
-      tab: { type: Number },
-      decibel: { type: Number },
+      emojiLevel: {
+        type: Number,
+        default: 0,
+      },
+      tab: {
+        type: Number,
+        default: 0,
+      },
+      decibel: {
+        type: Number,
+        default: 0,
+      },
     },
   },
   {
