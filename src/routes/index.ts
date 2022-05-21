@@ -1,5 +1,5 @@
-//router index file
-import { Router } from "express";
+// router index file
+import { Router } from 'express';
 
 const router: Router = Router();
 
