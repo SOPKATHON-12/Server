@@ -23,7 +23,7 @@ const getRanking = async (type: string): Promise<RankingResponseDto | null> => {
     rankingArr = _.sortBy(rankingArr, [type]).reverse();
 
     // console.log(rankingArr);
-    const index: number = _.findIndex(rankingArr, { userId: '6289291fab470b5634c74045' }) + 1;
+    const myRank: number = _.findIndex(rankingArr, { userId: '6289291fab470b5634c74045' }) + 1;
 
     // console.log(index);
 
@@ -52,7 +52,7 @@ const getRanking = async (type: string): Promise<RankingResponseDto | null> => {
     }
 
     return {
-      myRank: 1,
+      myRank: myRank,
       myScore: userScore,
       myEmojiLevel: user.maxRecord.emojiLevel,
       myName: user.name,
