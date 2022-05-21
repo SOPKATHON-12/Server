@@ -43,7 +43,7 @@
 
 - controller에 어떤 API 인지 주석 명시
 
-  ```json
+  ```
   /**
    * @route Post /movie
    * @desc Create Movie
@@ -145,7 +145,7 @@
 
 ## 🗂 프로젝트 폴더링
 
-```json
+```
 📦src
 ┣ 📂config
 ┣ 📂controllers
