@@ -11,7 +11,7 @@ const getRanking = async (type: string): Promise<RankingResponseDto | null> => {
     const ranking = await User.find();
     let rankingArr = ranking.map(o => {
       const userObject = {
-        userId: o._id,
+        userId: o.id,
         name: o.name,
         games: o.games,
         emojiLevel: o.maxRecord.emojiLevel,
@@ -22,15 +22,22 @@ const getRanking = async (type: string): Promise<RankingResponseDto | null> => {
     });
     rankingArr = _.sortBy(rankingArr, [type]).reverse();
 
-    console.log(rankingArr);
-    const index: number = rankingArr.findIndex((rankingData: any) => (rankingData.userId = '6289291fab470b5634c74045'));
-    console.log(index);
+    // console.log(rankingArr);
+    const index: number = _.findIndex(rankingArr, { userId: '6289291fab470b5634c74045' }) + 1;
+
+    // console.log(index);
 
     const rankers = await Promise.all(
       rankingArr.slice(0, 10).map((record: any) => {
+        let curScore = record.decibel;
+        if (type == 'decibel') {
+          curScore = record.decibel;
+        } else if (type == 'tab') {
+          curScore = record.tab;
+        }
         const result = {
           userName: record.name,
-          score: record.decibel,
+          score: curScore,
           emojiLevel: record.emojiLevel,
         };
         return result;
