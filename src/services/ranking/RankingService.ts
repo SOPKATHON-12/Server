@@ -1,6 +1,4 @@
-import { RankingRecordInfo } from '../../interfaces/ranking/RankingRecordInfo';
 import { RankingResponseDto } from '../../interfaces/ranking/RankingResponseDto';
-import Game from '../../models/Game';
 import User from '../../models/User';
 import _ from 'lodash';
 
