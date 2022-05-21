@@ -7,6 +7,6 @@ export interface GameInfo {
   score: string;
   emojiLevel: number;
   comment: string;
-  createAt: Date;
-  updateAt: Date;
+  createdAt: Date;
+  updatedAt: Date;
 }

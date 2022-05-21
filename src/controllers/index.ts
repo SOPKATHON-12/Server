@@ -1,3 +1,4 @@
 // controller index file
-export { };
+import MyRecordController from './MyRecordController';
 
+export { MyRecordController };
